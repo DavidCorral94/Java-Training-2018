@@ -35,13 +35,13 @@ public class Multithreading {
         System.out.println("Starting Thread threads");
         t3.start();
         t4.start();
+        System.out.println("Thread threads has been started");
         try {
             t3.join();
             t4.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Thread threads has been started");
     }
 }
 
